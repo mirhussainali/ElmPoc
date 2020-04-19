@@ -1,0 +1,18 @@
+[
+  [
+    "name" : "ElmDataValidator", 
+    "parameters" : [ 
+        "activityDate" : new StringDataType(), 
+        "activityName" : new StringDataType()
+    ], 
+    "results" : [ 
+        "activityDateValid" : new BooleanDataType(),
+        "activityTypeAllowed" : new BooleanDataType(),
+        "activityValidationMessage" : new StringDataType()
+        
+    ], 
+    "displayName" : "ElmDataValidator", 
+    "icon" : "",
+     "category" : "Elm Pallette"
+  ]
+]
