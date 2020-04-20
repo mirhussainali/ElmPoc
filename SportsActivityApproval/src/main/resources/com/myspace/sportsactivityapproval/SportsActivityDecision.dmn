@@ -89,14 +89,14 @@
   </dmn:decision>&#xd;
   <dmn:decision id="_7E18B8F4-1705-481D-844D-C152E5232422" name="activityDecision">&#xd;
     <dmn:extensionElements/>&#xd;
-    <dmn:variable id="_B9F36E37-7CDE-42F4-865B-0895F8B835A9" name="activityDecision" typeRef="number"/>&#xd;
+    <dmn:variable id="_B9F36E37-7CDE-42F4-865B-0895F8B835A9" name="activityDecision" typeRef="string"/>&#xd;
     <dmn:informationRequirement id="_8D6E3753-40D0-4A41-8912-3E46E4C79127">&#xd;
       <dmn:requiredDecision href="#_1CE75659-B615-4881-BC06-9E3C308D41B9"/>&#xd;
     </dmn:informationRequirement>&#xd;
     <dmn:informationRequirement id="_5EBC96E9-17B7-4DC9-9EAE-E8FE057FCC7D">&#xd;
       <dmn:requiredDecision href="#_BAF6D667-8054-426A-AC9B-5A541E05AF3F"/>&#xd;
     </dmn:informationRequirement>&#xd;
-    <dmn:decisionTable id="_362E1160-F3C9-46A1-A0B9-F9AEDA373925" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">&#xd;
+    <dmn:decisionTable id="_362E1160-F3C9-46A1-A0B9-F9AEDA373925" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">&#xd;
       <dmn:input id="_0C298723-EFB5-4309-AC15-0D9275CAC89F">&#xd;
         <dmn:inputExpression id="_F8D29D7E-D224-4868-982E-10BE96189B55" typeRef="string">&#xd;
           <dmn:text>maxTempDecision</dmn:text>&#xd;
@@ -116,7 +116,7 @@
           <dmn:text>"Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_EC6FF65C-99E2-4B6C-BE26-4D9A8A7997F2">&#xd;
-          <dmn:text>1</dmn:text>&#xd;
+          <dmn:text>"Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_512223F7-2D92-4B92-B966-7AAA87ED7D1B">&#xd;
@@ -127,7 +127,7 @@
           <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_37FF384F-71FF-4FBC-BC4E-CAEB1352503A">&#xd;
-          <dmn:text>0</dmn:text>&#xd;
+          <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_03F92762-CE7F-4B47-9E30-8366D775290A">&#xd;
@@ -138,7 +138,7 @@
           <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_344902B3-229C-4C98-9FEB-C3F6A9DFADF3">&#xd;
-          <dmn:text>2</dmn:text>&#xd;
+          <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_A37DE4A9-DEBE-40EB-89DF-362C2A275929">&#xd;
@@ -149,7 +149,7 @@
           <dmn:text>"Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_22E8894A-558B-4299-B876-B1C9347C89A6">&#xd;
-          <dmn:text>0</dmn:text>&#xd;
+          <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_D1A054BC-381D-4F6A-BB0C-9FA6EC6B6759">&#xd;
@@ -160,7 +160,7 @@
           <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_ACF70F2A-0C30-4A2E-B94E-C421A59AF587">&#xd;
-          <dmn:text>0</dmn:text>&#xd;
+          <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_0EB5F9D7-BEDE-41BF-AFA1-E795B916DC28">&#xd;
@@ -171,7 +171,7 @@
           <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_243243B5-2F80-416A-B427-7452C06FA114">&#xd;
-          <dmn:text>0</dmn:text>&#xd;
+          <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_831D2B2B-FE67-4A99-9AE2-ABF026F6895B">&#xd;
@@ -182,7 +182,7 @@
           <dmn:text>"Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_B20B87AB-F3DB-40D9-B66C-14F86A3C1959">&#xd;
-          <dmn:text>2</dmn:text>&#xd;
+          <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_D5987C58-493F-46A0-945A-D65B6D77C5DB">&#xd;
@@ -193,7 +193,7 @@
           <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_FA40F0CD-2ADC-4A6D-9975-C87B8175A754">&#xd;
-          <dmn:text>0</dmn:text>&#xd;
+          <dmn:text>"Not Allowed"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
       <dmn:rule id="_F0DE7455-1FB2-429B-93E6-38212EA7E973">&#xd;
@@ -204,7 +204,7 @@
           <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:inputEntry>&#xd;
         <dmn:outputEntry id="_6FB6262E-8661-41B3-B267-540F43BB24E2">&#xd;
-          <dmn:text>2</dmn:text>&#xd;
+          <dmn:text>"Need Approval"</dmn:text>&#xd;
         </dmn:outputEntry>&#xd;
       </dmn:rule>&#xd;
     </dmn:decisionTable>&#xd;
