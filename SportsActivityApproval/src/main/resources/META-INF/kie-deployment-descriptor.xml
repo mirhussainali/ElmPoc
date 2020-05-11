@@ -12,7 +12,7 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("SMTPSERVER","PORT","USERNAME","PWD")</identifier>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("email-smtp.us-east-1.amazonaws.com","25","AKIAZGPU32W555WJFPDH","BF89AdpBkW7go9QVvmd8hSbNCQY+OrRiQI/IyiAzzTpf")</identifier>
             <parameters/>
             <name>Email</name>
         </work-item-handler>
